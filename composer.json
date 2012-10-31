@@ -1,0 +1,18 @@
+{
+    "name": "davedevelopment/guzzle-wsse-auth-plugin",
+    "description": "A WSSE based authentication plugin for guzzle",
+    "require": {
+        "guzzle/guzzle": ">=v2.6"
+    },
+    "autoload": {
+        "psr-0": {
+            "Atst\\Guzzle": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dave Marshall",
+            "email": "dave.marshall@atstsolutions.co.uk"
+        }
+    ]
+}

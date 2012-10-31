@@ -34,7 +34,7 @@ class WsseAuthPluginTest extends \PHPUnit_Framework_TestCase
         $headers = $request->getHeaders();
         $this->assertTrue(false !== $headers->hasKey('Authorization'));
         $this->assertTrue(false !== $headers->hasKey('X-WSSE'));
-        $this->assertTrue(false !== strpos($headers->get('X-WSSE'), 'this_digest_wont_work'));
+        $this->assertTrue(false !== strpos(array_shift($headers->get('X-WSSE')), 'this_digest_wont_work'));
     }
 }
 ?>
